@@ -13,7 +13,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="814f7c5f-09bf-4a6b-abba-4e04043a83bd" name="Default Changelist" comment="" />
+    <list default="true" id="814f7c5f-09bf-4a6b-abba-4e04043a83bd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,22 +61,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/BrokerResolver.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding>
-                <element signature="e#1217#1229#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sources/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            <state relative-caret-position="105">
+              <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
               <folding>
                 <element signature="e#28#47#0" expanded="true" />
               </folding>
@@ -83,10 +73,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/checks.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -314,18 +313,18 @@
       <list>
         <option value="$PROJECT_DIR$/include/BrokerResolver.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/tests/data/dir/balance_00001234_20181001.txt" />
         <option value="$PROJECT_DIR$/tests/data/dir/balance_00001234_20181007.txt" />
-        <option value="$PROJECT_DIR$/sources/main.cpp" />
         <option value="$PROJECT_DIR$/sources/BrokerResolver.cpp" />
         <option value="$PROJECT_DIR$/tests/test.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds/CMakeFiles/3.14.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" />
+        <option value="$PROJECT_DIR$/sources/main.cpp" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="206" />
     <option name="y" value="114" />
     <option name="width" value="1392" />
@@ -343,32 +342,6 @@
             <path>
               <item name="lab-04-boost-filesystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="lab-04-boost-filesystem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab-04-boost-filesystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab-04-boost-filesystem" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab-04-boost-filesystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab-04-boost-filesystem" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
-              <item name="CMakeFiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab-04-boost-filesystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab-04-boost-filesystem" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
-              <item name="CMakeFiles" type="462c0819:PsiDirectoryNode" />
-              <item name="3.14.3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab-04-boost-filesystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab-04-boost-filesystem" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
-              <item name="CMakeFiles" type="462c0819:PsiDirectoryNode" />
-              <item name="3.14.3" type="462c0819:PsiDirectoryNode" />
-              <item name="CompilerIdCXX" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lab-04-boost-filesystem" type="b2602c69:ProjectViewProjectNode" />
@@ -466,30 +439,30 @@
       <option name="presentableId" value="Default" />
       <updated>1575650856701</updated>
       <workItem from="1575650857819" duration="966000" />
-      <workItem from="1575651854973" duration="9916000" />
+      <workItem from="1575651854973" duration="11009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10882000" />
+    <option name="totallyTimeSpent" value="11975000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="0" width="1928" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2724359" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2724359" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930845" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32930845" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32930845" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956093" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32930845" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32821077" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32821077" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32930845" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.32930845" />
@@ -517,13 +490,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/data/Veronika/balance_00001235_20181005.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/BrokerResolver.h">
       <provider selected="true" editor-type-id="text-editor">
@@ -774,11 +740,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sources/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        <state relative-caret-position="105">
+          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
           <folding>
             <element signature="e#28#47#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/checks.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
