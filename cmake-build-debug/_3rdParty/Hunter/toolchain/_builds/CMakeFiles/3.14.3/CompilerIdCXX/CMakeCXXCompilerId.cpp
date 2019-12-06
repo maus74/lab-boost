@@ -1,4 +1,4 @@
-// Copyright 2019 <Kondr11>
+// Copyright 2019 <maus74>
 /* This source file must have a .cpp extension so that all C++ compilers
    recognize the extension without flags.  Borland does not know .cxx for
    example.  */
@@ -562,7 +562,7 @@ char const info_version[] = {
 char const info_version_internal[] = {
   'I', 'N', 'F', 'O', ':',
   'c', 'o', 'm', 'p', 'i', 'l', 'e', 'r', '_', 'v', 'e', 'r', 's', 'i', 'o',
-  'n','_', 'i', 'n', 't', 'e', 'r', 'n', 'a', 'l', '[',
+  'n', '_', 'i', 'n', 't', 'e', 'r', 'n', 'a', 'l', '[',
   COMPILER_VERSION_INTERNAL, ']', '\0'};
 #endif
 
@@ -584,10 +584,10 @@ char const info_simulate_version[] = {
   ']', '\0'};
 #endif
 
-/* Construct the string literal in pieces to prevent the source from
-   getting matched.  Store it in a pointer rather than an array
-   because some compilers will just produce instructions to fill the
-   array rather than assigning a pointer to a static array.  */
+// Construct the string literal in pieces to prevent the source from
+// getting matched.  Store it in a pointer rather than an array
+// because some compilers will just produce instructions to fill the
+// array rather than assigning a pointer to a static array.
 char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";
 char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";
 
@@ -639,9 +639,9 @@ int main(int argc, char* argv[])
     require += info_language_dialect_default[argc];
     (void)argv;
     return require;
-}/* This source file must have a .cpp extension so that all C++ compilers
-   recognize the extension without flags.  Borland does not know .cxx for
-   example.  */
+}// This source file must have a .cpp extension so that all C++ compilers
+// recognize the extension without flags.  Borland does !know .cxx for
+// example.
 #ifndef __cplusplus
 # error "A C compiler has been selected for C++."
 #endif
@@ -760,7 +760,8 @@ int main(int argc, char* argv[])
 # endif
 
 
-#elif defined(__ibmxl__) || (defined(__IBMCPP__) && !defined(__COMPILER_VER__) && __IBMCPP__ >= 800)
+#elif defined(__ibmxl__) || (defined(__IBMCPP__) &&
+!defined(__COMPILER_VER__) && __IBMCPP__ >= 800)
 # define COMPILER_ID "XL"
 # if defined(__ibmxl__)
 #  define COMPILER_VERSION_MAJOR DEC(__ibmxl_version__)
@@ -901,7 +902,8 @@ int main(int argc, char* argv[])
 #  define COMPILER_VERSION_TWEAK DEC(_MSC_BUILD)
 # endif
 
-#elif defined(__VISUALDSPVERSION__) || defined(__ADSPBLACKFIN__) || defined(__ADSPTS__) || defined(__ADSP21000__)
+#elif defined(__VISUALDSPVERSION__) || defined(__ADSPBLACKFIN__)
+|| defined(__ADSPTS__) || defined(__ADSP21000__)
 # define COMPILER_ID "ADSP"
 #if defined(__VISUALDSPVERSION__)
   /* __VISUALDSPVERSION__ = 0xVVRRPP00 */
@@ -997,7 +999,8 @@ char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";
 #elif defined(__sun) || defined(sun)
 # define PLATFORM_ID "SunOS"
 
-#elif defined(_AIX) || defined(__AIX) || defined(__AIX__) || defined(__aix) || defined(__aix__)
+#elif defined(_AIX) || defined(__AIX) || defined(__AIX__)
+|| defined(__aix) || defined(__aix__)
 # define PLATFORM_ID "AIX"
 
 #elif defined(__hpux) || defined(__hpux__)
@@ -1180,8 +1183,8 @@ char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";
 #ifdef COMPILER_VERSION_MAJOR
 char const info_version[] = {
         'I', 'N', 'F', 'O', ':',
-        'c','o','m','p','i','l','e','r','_','v','e','r','s','i','o','n','[',
-        COMPILER_VERSION_MAJOR,
+        'c', 'o', 'm', 'p', 'i', 'l', 'e', 'r', '_', 'v', 'e', 'r', 's', 'i', 'o',
+        'n', '[', COMPILER_VERSION_MAJOR,
 # ifdef COMPILER_VERSION_MINOR
         '.', COMPILER_VERSION_MINOR,
 #  ifdef COMPILER_VERSION_PATCH
@@ -1191,24 +1194,24 @@ char const info_version[] = {
 #   endif
 #  endif
 # endif
-        ']','\0'};
+        ']', '\0'};
 #endif
 
 /* Construct a string literal encoding the internal version number. */
 #ifdef COMPILER_VERSION_INTERNAL
 char const info_version_internal[] = {
   'I', 'N', 'F', 'O', ':',
-  'c','o','m','p','i','l','e','r','_','v','e','r','s','i','o','n','_',
-  'i','n','t','e','r','n','a','l','[',
-  COMPILER_VERSION_INTERNAL,']','\0'};
+  'c', 'o', 'm', 'p', 'i', 'l', 'e', 'r', '_', 'v', 'e', 'r', 's', 'i', 'o',
+  'n', '_', 'i', 'n', 't', 'e', 'r', 'n', 'a', 'l', '[',
+  COMPILER_VERSION_INTERNAL, ']', '\0'};
 #endif
 
 /* Construct a string literal encoding the version number components. */
 #ifdef SIMULATE_VERSION_MAJOR
 char const info_simulate_version[] = {
   'I', 'N', 'F', 'O', ':',
-  's','i','m','u','l','a','t','e','_','v','e','r','s','i','o','n','[',
-  SIMULATE_VERSION_MAJOR,
+  's', 'i', 'm', 'u', 'l', 'a', 't', 'e', '_', 'v', 'e', 'r', 's', 'i', 'o',
+  'n', '[', SIMULATE_VERSION_MAJOR,
 # ifdef SIMULATE_VERSION_MINOR
   '.', SIMULATE_VERSION_MINOR,
 #  ifdef SIMULATE_VERSION_PATCH
@@ -1218,7 +1221,7 @@ char const info_simulate_version[] = {
 #   endif
 #  endif
 # endif
-  ']','\0'};
+  ']', '\0'};
 #endif
 
 /* Construct the string literal in pieces to prevent the source from
