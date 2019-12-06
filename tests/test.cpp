@@ -87,7 +87,7 @@ TEST_F(BrokerResolverFixture, GetFiles)
                     BrokerFile{
                             "balance_00001234_20181001.txt",
                             {"dir"}
-                    } ), files.cend() );
+                    }), files.cend() );
     EXPECT_NE(
             std::find(
                     files.cbegin(),
@@ -95,7 +95,7 @@ TEST_F(BrokerResolverFixture, GetFiles)
                     BrokerFile{
                             "balance_00001234_20181007.txt",
                             {"dir"}
-                    } ), files.cend());
+                    }), files.cend());
 }
 
 TEST_F(BrokerResolverFixture, GetFilesNestedDir)
@@ -107,7 +107,7 @@ TEST_F(BrokerResolverFixture, GetFilesNestedDir)
                     BrokerFile{
                             "balance_00001234_20181005.txt",
                             {"dir", "nested_dir"}
-                    } ), files.cend());
+                    }), files.cend());
 }
 
 TEST_F(BrokerResolverFixture, GetFilesSymlinkFile)
@@ -119,7 +119,7 @@ TEST_F(BrokerResolverFixture, GetFilesSymlinkFile)
                     BrokerFile{
                             "balance_00001234_20181010.txt",
                             {"dir"}
-                    } ),  files.cend());
+                    }),  files.cend());
 }
 
 TEST_F(BrokerResolverFixture, GetFilesSymlinkDir)
@@ -131,7 +131,7 @@ TEST_F(BrokerResolverFixture, GetFilesSymlinkDir)
                     BrokerFile{
                             "balance_00001234_20181001.txt",
                             {"new_dir"}
-                    } ), files.cend());
+                    }), files.cend());
     EXPECT_NE(
             std::find(
                     files.cbegin(),
@@ -139,7 +139,7 @@ TEST_F(BrokerResolverFixture, GetFilesSymlinkDir)
                     BrokerFile{
                             "balance_00001234_20181007.txt",
                             {"new_dir"}
-                    } ), files.cend());
+                    }), files.cend());
 }
 
 TEST_F(BrokerResolverFixture, GetFilesNoOld)
@@ -151,7 +151,7 @@ TEST_F(BrokerResolverFixture, GetFilesNoOld)
                     BrokerFile{
                             "balance_00001235_20190505.old.txt",
                             {"dir"}
-                    } ), files.cend());
+                    }), files.cend());
     EXPECT_EQ(
             std::find(
                     files.cbegin(),
@@ -159,7 +159,7 @@ TEST_F(BrokerResolverFixture, GetFilesNoOld)
                     BrokerFile{
                             "balance_00001235_20190505.old.txt",
                             {"new_dir"}
-                    } ), files.cend() );
+                    }), files.cend() );
 }
 
 
@@ -199,5 +199,5 @@ TEST_F(BrokerResolverFixture, DataCollectionWrongExtension)
                     BrokerFile{
                             "balance_00001459_20191011.yml",
                             {"dir", "nested_dir"}
-                    } ), files.cend());
+                    }), files.cend());
 }
