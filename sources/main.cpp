@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[])
 {
-    boost::filesystem::path path = ".";
+    boost::filesystem::path path = "/home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/tests/data";
     if (argc > 1) {
         path = argv[1];
     }
