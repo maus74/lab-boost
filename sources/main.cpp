@@ -1,10 +1,11 @@
+// Copyright 2019 <Maus74>
 #include <iostream>
 
 #include "BrokerResolver.h"
 
 int main(int argc, char *argv[])
 {
-    boost::filesystem::path path = "/home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/tests/data";
+    boost::filesystem::path path = ".";
     if (argc > 1) {
         path = argv[1];
     }
@@ -13,12 +14,13 @@ int main(int argc, char *argv[])
     resolver.resolve(path);
 
     std::cout << "FILES: \n";
-    for (const BrokerFile &file: resolver.getFileCollection()) {
-        std::cout << file.directoriesToString() << " " << file.filename << std::endl;
+    for (const BrokerFile &file : resolver.getFileCollection()) {
+        std::cout << file.directoriesToString() << " " <<
+                  file.filename << std::endl;
     }
 
     std::cout << "\nDATA: \n";
-    for (const auto &pair: resolver.getDataCollection()) {
+    for (const auto &pair : resolver.getDataCollection()) {
         std::cout << "broker:" << pair.first.broker
                   << " account:" << pair.first.account
                   << " files:" << pair.second.files
