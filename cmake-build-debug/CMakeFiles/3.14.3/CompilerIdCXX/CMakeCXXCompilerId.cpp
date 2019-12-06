@@ -1183,7 +1183,8 @@ char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";
 #ifdef COMPILER_VERSION_MAJOR
 char const info_version[] = {
         'I', 'N', 'F', 'O', ':',
-        'c', 'o', 'm', 'p', 'i', 'l', 'e', 'r', '_', 'v', 'e', 'r', 's', 'i', 'o',
+        'c', 'o', 'm', 'p', 'i', 'l', 'e',
+        'r', '_', 'v', 'e', 'r', 's', 'i', 'o',
         'n', '[', COMPILER_VERSION_MAJOR,
 # ifdef COMPILER_VERSION_MINOR
         '.', COMPILER_VERSION_MINOR,
