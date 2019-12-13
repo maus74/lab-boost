@@ -50,10 +50,10 @@ target_link_libraries(
 )
 
 
-#add_executable(
-    #    tests
-     #   ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
-#)
+add_executable(
+        tests
+        ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
+)
 
 target_include_directories(
         ${PROJECT_NAME}
@@ -61,12 +61,12 @@ target_include_directories(
         ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
-#target_include_directories(
-  #      tests
-    #    PUBLIC
-  #      ${CMAKE_CURRENT_SOURCE_DIR}/include
-      #  ${GTEST_ROOT}/include
-#)
+target_include_directories(
+        tests
+        PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+        ${GTEST_ROOT}/include
+)
 
 target_link_libraries(
         tests

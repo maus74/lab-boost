@@ -1,6 +1,6 @@
 os: linux
 language:
-  - shell
+   shell
 services:
   - docker
 
