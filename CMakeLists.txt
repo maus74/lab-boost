@@ -61,12 +61,12 @@ target_include_directories(
         ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
-target_include_directories(
-        tests
-        PUBLIC
-        ${CMAKE_CURRENT_SOURCE_DIR}/include
-        ${GTEST_ROOT}/include
-)
+#target_include_directories(
+  #      tests
+    #    PUBLIC
+  #      ${CMAKE_CURRENT_SOURCE_DIR}/include
+      #  ${GTEST_ROOT}/include
+#)
 
 target_link_libraries(
         tests
@@ -85,7 +85,7 @@ if (BUILD_COVERAGE)
   find_package(codecov)
   add_coverage(${PROJECT_NAME})
   add_coverage(${PROJECT_NAME}Demo)
-  #add_coverage(tests)
+  add_coverage(tests)
   list(APPEND LCOV_REMOVE_PATTERNS "'${PROJECT_SOURCE_DIR}/tests/*'")
   coverage_evaluate()
 endif ()
