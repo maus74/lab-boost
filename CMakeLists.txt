@@ -50,10 +50,10 @@ target_link_libraries(
 )
 
 
-add_executable(
-        tests
-        ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
-)
+#add_executable(
+    #    tests
+     #   ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
+#)
 
 target_include_directories(
         ${PROJECT_NAME}
@@ -83,8 +83,8 @@ if (BUILD_COVERAGE)
   set(ENABLE_COVERAGE ON CACHE BOOL "Enable coverage build." FORCE)
   list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
   find_package(codecov)
-  add_coverage(${PROJECT_NAME}/sources)
- #g add_coverage(${PROJECT_NAME}Demo)
+  add_coverage(${PROJECT_NAME})
+  add_coverage(${PROJECT_NAME}Demo)
   add_coverage(tests)
   list(APPEND LCOV_REMOVE_PATTERNS "'${PROJECT_SOURCE_DIR}/tests/*'")
   coverage_evaluate()
